@@ -1,1 +1,1 @@
-export const base_URL = "http://localhost:5005"
+export const base_URL = "https://product-management-json-server.onrender.com"
