@@ -1,0 +1,52 @@
+html,body,#root,.App{
+    overflow: hidden;
+    height: 100%;
+}
+.App{
+    display:flex ;
+    flex-direction: column;
+    overflow: hidden;
+}
+.search-container{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+.search-row{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+.second-col{
+    flex: 1;
+    overflow: auto;
+    height: 100%;
+}
+colgroup .col-1{
+    width: 80px;
+}
+colgroup .col-2{
+    width: auto;
+}
+colgroup .col-3{
+    width: 120px;
+}
+colgroup .col-4{
+    width: 80px;
+}
+colgroup .col-5{
+    width: 70px;
+}
+.product-img{
+    max-width: 100px;
+
+}
+.search-box{
+    outline: none;
+    
+}
+.search-box:focus{
+    outline: none;
+    box-shadow: none !important;
+    border: none !important;
+}

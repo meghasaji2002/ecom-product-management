@@ -1,0 +1,10 @@
+.products-background{
+    background: linear-gradient(to top,rgb(47, 192, 122),rgb(130, 205, 240));
+}
+.dashboard-text{
+    color: rgb(47, 192, 122);
+    font-weight: bold;
+}
+.add-form{
+    background-image: linear-gradient(to left,rgb(99, 179, 140),rgb(165, 217, 241));
+}

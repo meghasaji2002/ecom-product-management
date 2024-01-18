@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Products from './pages/Products';
+import Search from './pages/Search';
+import Home from './pages/Home';
+import { useState } from 'react';
 
 function App() {
+
+const[uploadProduct,setUploadProductStatus] = useState({})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Header/>
+        <Routes>
+        <Route path='/' element={<Home/>}> </Route>
+          <Route path='/products' element={<Products/>}> </Route>
+           <Route path='/search' element={<Search/>}></Route>
+        </Routes>
     </div>
   );
 }
