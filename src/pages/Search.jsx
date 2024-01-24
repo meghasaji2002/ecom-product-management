@@ -100,7 +100,9 @@ useEffect(()=>{
                  </tr>))
                    
                  : 
-                 <p>Nothing to display</p>}
+               <div style={{width:'500px'}}> 
+                 {/* <p className='text-danger fw-bold'>Nothing to display</p> */}
+                 <img src="https://assets-global.website-files.com/65084cba9d60b1182e9f0021/651eb137d966b69fb46ce3f9_ezgif_com_gif_maker_ccdec5da19.gif" width={'400px'} alt="" /></div>}
                 </tbody>
              </table>
             </div>

@@ -55,7 +55,7 @@ function Products() {
                 </div>
             </div>
             <div className="col-md-10 fs-3  mt-2 dashboard-text mb-5" >
-                DashBoard
+                {/* DashBoard */}
                 <div className='d-flex align-items-center justify-content-center  ' style={{marginTop:'20px'}}>
                     <div className='w-75 border-dark shadow p-4 add-form' style={{height:'400px'}}>
                         <div className=''>
@@ -73,8 +73,8 @@ function Products() {
 
                                 <input className='form-control mb-2' type="text" placeholder='Price' onChange={(e)=>setProducts({...products, price:e.target.value})} />
                                 
-                                <button className='btn bg-warning'>Cancel</button>
-                                <button type='submit' className='btn bg-success ms-2' 
+                                <button className=' CancelBtn'>Cancel</button>
+                                <button type='submit' className=' addBtn ms-2' 
                                 onClick={handleUpload}
                                 >Add</button>
                              </form>

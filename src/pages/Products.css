@@ -1,10 +1,38 @@
 .products-background{
-    background: linear-gradient(to top,rgb(47, 192, 122),rgb(130, 205, 240));
+    background-color: rgb(144, 175, 244);
 }
-.dashboard-text{
-    color: rgb(47, 192, 122);
+/* .dashboard-text{
+    color: rgb(79, 101, 207);
     font-weight: bold;
-}
+} */
 .add-form{
-    background-image: linear-gradient(to left,rgb(99, 179, 140),rgb(165, 217, 241));
+    background-image: linear-gradient(to left,rgb(176, 197, 242),rgb(184, 198, 220));
+}
+.CancelBtn{
+    background-color: rgb(107, 107, 124);
+    font-size: 16px;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: white;
+}
+.addBtn{
+    background-color:rgb(82, 131, 236);
+    font-size: 16px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.addBtn:hover{
+   border: 2px solid rgb(66, 63, 232);
+   font-weight: bold;
+   color: rgb(66, 63, 232);
+   background-color: white;
+}
+.CancelBtn:hover{
+    border: 2px solid rgb(91, 91, 96);
+   font-weight: bold;
+   color: rgb(70, 70, 75);
+   background-color: white;
 }
