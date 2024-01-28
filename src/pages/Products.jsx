@@ -42,19 +42,9 @@ function Products() {
 
   return (
     <div className='container-fluid'>
-         <div className='row'>
-            <div className="col-md-2 products-background" >
-                <div className='mt-5 fs-5'>
-                    <div className='mb-3' style={{color:'black'}}>
-                   <Link to='/' style={{color:'black'}}> <i class="fa-solid fa-house me-2"></i></Link>
-                      Home
-                    </div>
-                    <div style={{color:'black'}}>
-                        <Link to='/search' style={{color:'black'}}><i class="fa-brands fa-product-hunt me-2"></i></Link>
-                        Product List</div>
-                </div>
-            </div>
-            <div className="col-md-10 fs-3  mt-2 dashboard-text mb-5" >
+        
+            
+            <div className=" fs-3  mt-2 dashboard-text mb-5" >
                 {/* DashBoard */}
                 <div className='d-flex align-items-center justify-content-center  ' style={{marginTop:'20px'}}>
                     <div className='w-75 border-dark shadow p-4 add-form' style={{height:'400px'}}>
@@ -82,7 +72,7 @@ function Products() {
                     </div> 
                 </div>
             </div>
-         </div>
+        
          <ToastContainer position='top-center' theme='colored' autoClose={2000}/>
     </div>
   )

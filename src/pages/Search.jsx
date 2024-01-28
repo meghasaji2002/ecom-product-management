@@ -45,19 +45,9 @@ useEffect(()=>{
 
   return (
     <div className='container-fluid search-container'>
-      <div className='row search-row'>
-      <div className="col-md-2 products-background" style={{height:'100vh'}}>
-                <div className='mt-5 fs-5'>
-                    <div className='mb-3' style={{color:'black'}}>
-                   <Link to='/' style={{color:'black'}}> <i class="fa-solid fa-house me-2"></i></Link>
-                      Home
-                    </div>
-                    <div style={{color:'black'}}>
-                        <Link  to='/products' style={{color:'black'}}><i class="fa-brands fa-dashcube me-2"></i></Link>
-                       DashBoard</div>
-                </div>
-            </div>
-        <div className='col-md-10 d-flex flex-column align-items-center pt-4 second-col '>
+      <div className=' search-row'>
+     
+        <div className=' d-flex flex-column align-items-center pt-4 second-col '>
           <div className='w-100  d-flex align-items-center justify-content-center '>
              <div className='w-25 px-2 d-flex align-items-center justify-content-center ' style={{border:'1px solid gray',borderRadius:'25px'}}>
                 <input onChange={(e)=>setSearch(e.target.value)} type="text" className='form-control search-box' style={{border:'transparent'}} placeholder='search products' />
@@ -71,14 +61,16 @@ useEffect(()=>{
                 <colgroup>
                   <col className='col-1' />
                   <col className='col-2' />
-                  <col className='col-3'  />
-                  <col className='col-4' />
+                  <col className='col-3'/>
+                  <col className='col-4'  />
                   <col className='col-5' />
+                  <col className='col-6' />
                 </colgroup>
                 <thead>
                   <tr className='table-active text-center p-2'>
                     <th>Product Id</th>
                     <th>Product Name</th>
+                    <th>Category</th>
                     <th>Product Image</th>
                     <th>Price</th>
                     <th>Action</th>
@@ -93,6 +85,7 @@ useEffect(()=>{
                     <td style={{width:'100px',overflow:'auto'}}>
                     {item.product_name} 
                     </td>
+                    <td>{item.category}</td>
                     <td><img className='product-img' src={item.image_Url} alt="" /></td>
                     <td>{item.price}</td>
                     <td><button onClick={()=>removeProducts(item.id)} style={{border:'transparent'}}><i class="fa-solid fa-trash-can fs-2 text-danger"></i></button></td>

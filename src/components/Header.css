@@ -3,3 +3,9 @@
     background: linear-gradient(to right,rgb(175, 201, 242),rgb(82, 131, 236));
     
 }
+.nav-icons{
+    width: 150px;
+}
+.icon:hover{
+    color: rgb(255, 255, 255);
+}
